@@ -10,7 +10,11 @@ html {
 }
 
 body {
-    background: linear-gradient(105deg, rgba(204, 244, 255, 0.18), #8fffff0a)
+    /* background: linear-gradient(105deg, rgba(204, 244, 255, 0.18), #8fffff0a);
+    padding-left: 0.5rem; */
+    background-color:cadetblue;
+    padding-left: 1rem;
+    
 }
 
 .l-title {
@@ -42,12 +46,18 @@ body {
 }
 
 textarea {
+    padding-left: 0.5rem;
     resize: none;
-    background: transparent;
+    background: #eeeeee80 ;
     border-color: transparent;
     box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
     -webkit-box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
     -moz-box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
+}
+
+#aviso {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 #btn-encriptar {
@@ -60,9 +70,6 @@ textarea {
     border-radius: 50px;
     transition : 1000ms;
     transform: translateY(0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -85,9 +92,6 @@ textarea {
     border-radius: 50px;
     transition : 1000ms;
     transform: translateY(0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     cursor: pointer;
 }
 
