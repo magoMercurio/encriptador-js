@@ -64,6 +64,7 @@ textarea {
     font-size: 1.4rem;
     color: #fff;
     background-color: #0066CC;
+    margin-right: 0.5rem;
     padding: 0.5rem 2.5rem;
     border: solid #0066cc 2px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
