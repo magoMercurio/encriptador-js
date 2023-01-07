@@ -10,19 +10,19 @@
 </head>
 <body>
     <header class="l-title">
-        <div>
-            <img class="logo" src="/img/favicon.png" alt="aqui va un logo">
-        </div>
-        <h1 class="h1-title">Encriptador</h1>
+        <img class="title-contain" id="logo" src="/img/favicon.png" alt="aqui va un logo">
+
+        <h1 class="title-contain" id="h1-title">Encriptador</h1>
+
     </header>
 
     <main class="m-container">
 
-        <section class="input-contain">
+        <section class="contain">
 
-            <textarea class="input-" id="input" name="input" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+            <textarea class="input-text" id="input" name="input" placeholder="Ingrese el texto aqui..." cols="30" rows="10" autofocus></textarea>
 
-            <div class="button-container">
+            <div class="buttons-container">
                 <p> &#10071; Solo minúsculas y sin acentos.</p>
                 <button id="encriptar">Encriptar</button>
                 <button id="desencriptar">Desencriptar</button>
@@ -30,12 +30,11 @@
 
         </section>
 
-        <section class="output-contain">
+        <section class="contain" id="output">
 
-            <div class="img-container">
                 <img class="img-contain" src="/img/avatar.png" alt="avatar">
                 <img class="img-contain" src="/img/no-content.png" alt="no-content">   
-            </div>
+            
 
         </section>
 

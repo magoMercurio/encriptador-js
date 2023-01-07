@@ -8,3 +8,51 @@ html {
     /* PARA USAR MEDIDA REM DE MANERA RESPONSIVA */
     font-size:  62.5%;
 }
+
+body {
+    background: linear-gradient(105deg, rgba(204, 244, 255, 0.18), #8fffff0a)
+}
+
+.l-title {
+    display:inline-block;
+    padding-left: 0.5rem;
+    padding-top: 1.5rem;
+}
+
+.title-contain {
+    display: inline-block;
+    margin: 0 0 0 1.5rem;
+
+}
+
+#logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+#h1-title {
+    font-size: 3.5rem;
+}
+
+
+
+.contain {
+    display: inline-block;
+    
+}
+
+textarea {
+    resize: none;
+    background: transparent;
+    border-color: transparent;
+    box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
+    -webkit-box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
+    -moz-box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
+}
+
+
+
+.img-contain {
+    display:block;
+  
+}
