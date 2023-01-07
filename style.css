@@ -45,14 +45,22 @@ body {
     
 }
 
+#left {
+    width: 350px;
+    margin-bottom: 15px;
+}
+
 textarea {
     padding-left: 0.5rem;
+    width: auto;
+    height: 250px;
     resize: none;
     background: #eeeeee80 ;
     border-color: transparent;
     box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
     -webkit-box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
     -moz-box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
+    text-align: center;
 }
 
 #aviso {
@@ -105,7 +113,15 @@ textarea {
     border: none;
 }
 
-
+#output {
+    
+    position:relative;
+    bottom: auto;
+    left: auto;
+    
+    background-color: aliceblue;
+    border-radius: 20px;
+}
 
 .img-contain {
     display:block;
