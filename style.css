@@ -132,3 +132,15 @@ textarea {
 .img-contain {
     display:block;
 }
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    height: 4rem;
+	text-align: center;
+    font-size: 1.4rem;
+    color: white;
+}
