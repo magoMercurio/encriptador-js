@@ -53,13 +53,11 @@ body {
 textarea {
     padding-left: 0.5rem;
     width: auto;
-    height: 250px;
+    height: 350px;
     resize: none;
     background: #eeeeee80 ;
     border-color: transparent;
-    box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
-    -webkit-box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
-    -moz-box-shadow: 17px 5px 10px -6px rgba(144,156,179,0.75);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     text-align: center;
 }
 
@@ -120,6 +118,7 @@ textarea {
     left: auto;
     
     background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 20px;
 }
 
