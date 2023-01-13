@@ -68,7 +68,7 @@ textarea {
     text-align: center;
 }
 
-#aviso {
+#error {
     font-size: 1rem;
     font-weight: bold;
 }
@@ -110,7 +110,7 @@ textarea {
 }
 
 #btn-desencriptar:hover {
-    transition : 1000ms;
+    transition: 1000ms;
     padding: 0.6rem 2.5rem;
     transform : translateY(-0px);
     background-color: #fff;
@@ -133,6 +133,32 @@ textarea {
     display:block;
 }
 
+.btn-info-copiar{
+    background-color: rgba(199, 199, 211, 0.808);
+    border: 1px solid rgba(57, 57, 228, 0.808);
+    color: rgba(57, 57, 228, 0.808);
+}
+
+.btn-info-copiar:hover{
+    background-color: rgba(57, 57, 228, 0.5);
+    border: 1px solid rgba(57, 57, 228, 0.808);
+    color: #fff;
+}
+
+.imagen{
+    display: block;
+}
+
+
+.ocultarImagen{display: none;}
+
+.copiar{
+    position: absolute;
+    width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 2em ;
+}
 
 footer {
     position: absolute;

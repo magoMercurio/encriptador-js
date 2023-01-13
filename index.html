@@ -8,35 +8,42 @@
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
+
+<header class="l-title">
+    <img class="title-contain" id="logo" src="/img/favicon.png" alt="aqui va un logo">
+
+    <h1 class="title-contain" id="h1-title">Encriptador</h1>
+
+</header>
+
 <body>
-    <header class="l-title">
-        <img class="title-contain" id="logo" src="/img/favicon.png" alt="aqui va un logo">
-
-        <h1 class="title-contain" id="h1-title">Encriptador</h1>
-
-    </header>
-
     <main class="m-container">
 
         <section class="contain" id="left">
 
-            <textarea class="input-text" id="input" name="input" placeholder="Ingrese el texto aqui..." cols="30" rows="10" autofocus></textarea>
-
-            <p id="aviso"> &#10071; Solo minúsculas y sin acentos.</p>
+            <textarea class="input-text" name="input" id="input" name="input" placeholder="Ingrese el texto aqui..." cols="30" rows="10" autofocus></textarea>
+            <p id="error"> &#10071; Solo minúsculas y sin acentos.</p>
 
             <div class="buttons-container">
                 
-                <button class="btn-contain" id="btn-encriptar">Encriptar</button>
-                <button class="btn-contain" id="btn-desencriptar">Desencriptar</button>
+                <button class="btn-contain" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn-contain" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
 
         </section>
 
         <section class="contain" id="output">
 
-                <img class="img-contain" src="/img/avatar.png" alt="avatar">
+            <div id="resultado">
+                <img class="img-contain" id="imagen" src="/img/avatar.png" alt="avatar">
                 <img class="img-contain" src="/img/no-content.png" alt="no-content">   
+            </div>
             
+            <div class="btn-copy">
+
+                <button class="btn-info-copiar" id="copiar" hidden>Copiar</button>
+
+            </div>
 
         </section>
 
@@ -45,5 +52,7 @@
     <footer>
         Creado por Raul Davila
     </footer>
+
+    <script src="/main.js"></script>
 </body>
 </html>
