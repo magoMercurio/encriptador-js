@@ -13,8 +13,9 @@ body {
     /* background: linear-gradient(105deg, rgba(204, 244, 255, 0.18), #8fffff0a);
     padding-left: 0.5rem; */
     background-color:cadetblue;
-    padding-left: 1rem;
-    
+    display: flex;
+    flex-direction: column;    
+    min-height: 100vh;
 }
 
 .l-title {
@@ -42,11 +43,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-
-.contain {
-
+    padding-bottom: 1rem;
 }
 
 #left {
@@ -120,9 +117,10 @@ textarea {
 
 #output {
     
-    position:relative;
-    bottom: auto;
-    left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height:auto;
     
     background-color: aliceblue;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -130,30 +128,54 @@ textarea {
 }
 
 .img-contain {
-    display:block;
+    display:flex;
+    flex-direction: column;
 }
 
 .btn-info-copiar{
-    background-color: rgba(199, 199, 211, 0.808);
-    border: 1px solid rgba(57, 57, 228, 0.808);
-    color: rgba(57, 57, 228, 0.808);
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #82b0de;
+    padding: 0.5rem 2.5rem;
+    border: solid #82b0de 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    cursor: pointer;
 }
 
 .btn-info-copiar:hover{
-    background-color: rgba(57, 57, 228, 0.5);
-    border: 1px solid rgba(57, 57, 228, 0.808);
-    color: #fff;
+    transition: 1000ms;
+    padding: 0.6rem 2.5rem;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #0066cc;
+    border: none;
 }
 
-.imagen{
-    display: block;
+.ocultarImagen { display: none;
 }
 
+#resultado {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+}
 
-.ocultarImagen{display: none;}
+.btn-copy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+
+}
+
 
 .copiar{
-    position: absolute;
+    margin-top: auto;
     width: 30%;
     padding: 10px;
     border-radius: 15px;
@@ -161,12 +183,74 @@ textarea {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+
     width: 100%;
+    margin-top: auto;
     background-color: black;
-    height: 4rem;
+    height: 2rem;
 	text-align: center;
     font-size: 1.4rem;
     color: white;
+}
+
+@media (max-width: 710px ) {
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #btn-encriptar {
+        font-size: 1.4rem;
+        color: #fff;
+        background-color: #0066CC;
+        margin-right: 0.5rem;
+        padding: 0.5rem 2.5rem;
+        margin-bottom: 2.5rem;
+        border: solid #0066cc 2px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 50px;
+        transition : 1000ms;
+        transform: translateY(0);
+        cursor: pointer;
+    }
+    
+    #btn-encriptar:hover {
+        transition : 1000ms;
+        padding: 0.6rem 2.5rem;
+        transform : translateY(-0px);
+        background-color: #fff;
+        color: #0066cc;
+        border: none;
+    }
+    
+    #btn-desencriptar {
+        font-size: 1.4rem;
+        color: #fff;
+        background-color: #82b0de;
+        margin-right: 0.5rem;
+        padding: 0.5rem 2.5rem;
+        border: solid #82b0de 2px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 50px;
+        transition : 1000ms;
+        transform: translateY(0);
+        cursor: pointer;
+    }
+    
+    #btn-desencriptar:hover {
+        transition: 1000ms;
+        padding: 0.6rem 2.5rem;
+        transform : translateY(-0px);
+        background-color: #fff;
+        color: #0066cc;
+        border: none;
+
+}
+
+#output {
+    height: fit-content;
+}
+
 }
